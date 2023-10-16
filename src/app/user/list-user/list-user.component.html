@@ -1,0 +1,11 @@
+<h2 appMyDirective>List Users</h2>
+
+<ul *ngFor="let item  of List">
+    <li>{{item.firstName}}<button [routerLink]="['/editUser',item.idCustomer]" [queryParams]="{'fname':item.firstName, 'lname':item.lastName}">Edit</button></li>
+
+</ul>
+
+<button><a routerLink="addUser"> Add new User </a></button>
+<button (click)="add()">Add New user</button>
+
+<router-outlet></router-outlet>
