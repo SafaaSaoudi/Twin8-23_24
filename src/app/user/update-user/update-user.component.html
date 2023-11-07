@@ -1,0 +1,44 @@
+<h2>Update User</h2>
+<form class="form-group" [formGroup]="updateForm" *ngIf="updateForm"  >
+    <input type="text" hidden id="id" class="form-control"  name="id" formControlName="id"  >
+
+    <label for="fname">FirstName</label>
+    
+    <input type="text" id="fname" class="form-control"  name="fname" formControlName="fn"  >
+    <!-- <small  class="text text-danger" *ngIf="fn.invalid && fn.touched">Error!</small><br>
+    <small  class="text text-danger" *ngIf="fn?.errors?.['required'] && fn.touched">Name is required</small>
+    <small  class="text text-danger" *ngIf="fn?.errors?.['minlength'] && fn.touched">Name must at least be 3 cars! </small> -->
+    
+    <label for="lname">lastName</label>
+    <input type="text" id="lname" class="form-control"  name="lname" formControlName="ln"  >
+    
+    <label for="db">Birthdate</label>
+    <input type="date" id="db" class="form-control"  name="db" formControlName="db"  >
+    
+    
+    <label for="email">Email</label>
+    <input type="email" id="email"  class="form-control" name="email"  formControlName="email">
+    
+    <label for="pass">Password</label>
+    <input type="password" id="pss"  class="form-control" name="pass"  formControlName="pass">
+    
+    <label for="email">Profession</label>
+    <input type="text" id="proff"  class="form-control" name="proff"  formControlName="proff">
+    
+
+    <label for="acc">accountcategory</label>
+    <input type="text" id="acc"  class="form-control" name="acc"  formControlName="accountcatg">
+    
+    
+    <label for="pic">Picture</label>
+    <input type="text" id="pic"  class="form-control" name="pic"  formControlName="pic">
+    
+    
+    <button type="submit" class="btn btn-primary" (click)="update()">Submit</button>
+    
+    </form>
+    
+    
+    
+     
+    
